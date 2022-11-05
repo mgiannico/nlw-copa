@@ -23,7 +23,7 @@ function createCard(date, day, games) {
 }
 
 document.querySelector('.cards').innerHTML = `
-        ${createCard("24/11", "quinta", createGame('brasil', '16:00', 'camaroes') + createGame('brasil', '16:00', 'camaroes'))}
-        ${createCard("28/11", "segunda", createGame())}
-        ${createCard("02/12", "sexta", createGame())}
+        ${createCard("20/11", "domingo", createGame('quatar', '13:00', 'ecuador'))}
+        ${createCard("21/11", "segunda", createGame('england', '10:00', 'iran') + createGame('senegal', '13:00', 'netherlands') + createGame('USA', '16:00', 'wales'))}
+        ${createCard("22/11", "terça", createGame())}
 `
