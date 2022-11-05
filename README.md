@@ -32,6 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 Calendário com os horários dos jogos da Copa do mundo 2022
+Pode ser vizualizado pelo link: https://mgiannico.github.io/nlw-copa/
 
 ## 🔖 Layout
 
