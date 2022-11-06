@@ -1,8 +1,10 @@
-function createGame(player1, hour, player2, name) {
+  function createGame(player1, hour, player2, name) {
     return `
      <li>
              <img src="./assets/icon-${player1}.svg" alt="ícone bandeira do ${player1}">
+             <input type="text" id="pontuação1"></input>
              <strong>${hour}</strong>
+             <input type="text" id="pontuação2"></input>
              <img src="./assets/icon-${player2}.svg" alt="ícone bandeira do ${player2}">
              
      </li>
@@ -25,7 +27,7 @@ function createCard(date, day, games) {
 }
 
 document.querySelector('.cards').innerHTML = `
-        ${createCard("20/11", "domingo", createGame('quatar', '13:00', 'ecuador', 'Catar X Equador'))}
+        ${createCard("20/11", "domingo", createGame('quatar','13:00','ecuador', 'Catar X Equador'))}
         ${createCard("21/11", "segunda", createGame('england', '10:00', 'iran', 'Inglaterra X Irã') + createGame('senegal', '13:00', 'netherlands', 'Senegal X Holanda') + createGame('USA', '16:00', 'wales', 'USA X País de Gales'))}
         ${createCard("22/11", "terça", createGame('argentina', '07:00', 'saudi-arabia', 'Argentina X Arabia Saudita') + createGame('denmark', '10:00', 'tunisia', 'Dinamarca X Tunísia') + createGame('mexico', '13:00', 'poland', 'México X Polônia') + createGame('france', '16:00', 'australia', 'França X Austrália'))}
         ${createCard("23/11", "quarta", createGame('morocco', '07:00', 'croatia', 'Marrocos X Croácia') + createGame('germany', '10:00', 'japan', 'Alemanha X Japão') + createGame('spain', '13:00', 'costa-rica', 'Espanha X Costa Rica') + createGame('belgium', '16:00', 'canada', 'Bélgica X Canadá'))}

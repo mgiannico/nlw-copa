@@ -123,6 +123,23 @@ header {
     transform: transform 0.4s;
 }
 
+.card ul li input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #333333;
+    background: var(--card-bg-color);
+    border: 1px solid #000000;
+    width: 30px;
+    height: 40px;
+    margin: 4px;
+    font-style:bold;
+    font-family: “Segoe UI”,”Arial”,”Times New Roman”;
+    font-size: 30px;
+    text-align: center;
+    color: #E1E1E6;
+}
 
 .card {
     animation: appear 2s;
@@ -145,3 +162,5 @@ header {
         flex-wrap: wrap;
     }
 }
+
+
