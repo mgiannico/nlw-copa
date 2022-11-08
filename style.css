@@ -30,7 +30,7 @@ ul {
 } 
 
 body {
-    background-color: #121214;
+    background-color: #121214;;
     background-image: var(--bg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -123,7 +123,7 @@ header {
     transform: transform 0.4s;
 }
 
-.card ul li input {
+.card ul li input  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,9 +131,7 @@ header {
     box-shadow: 1px 1px 2px #333333;
     background: var(--card-bg-color);
     border: 1px solid #000000;
-    width: 30px;
-    height: 40px;
-    margin: 4px;
+    margin: 5px;
     font-style:bold;
     font-family: “Segoe UI”,”Arial”,”Times New Roman”;
     font-size: 30px;

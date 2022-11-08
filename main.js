@@ -1,16 +1,28 @@
   function createGame(player1, hour, player2, name) {
     return `
      <li>
-             <img src="./assets/icon-${player1}.svg" alt="ícone bandeira do ${player1}">
-             <input type="text" id="pontuação1"></input>
-             <strong>${hour}</strong>
-             <input type="text" id="pontuação2"></input>
-             <img src="./assets/icon-${player2}.svg" alt="ícone bandeira do ${player2}">
-             
+        <img src="./assets/icon-${player1}.svg" alt="ícone bandeira do ${player1}">
+            <input style="width:30px; height: 45px;" id="pontuaçao1" placeholder=""></input>
+            <br>
+              <script>
+               pontuaçao1.value = localStorage.getItem('pontuaçao1');
+               pontuaçao1.oninput = () => {
+               localStorage.setItem('pontuaçao1', pontuaçao1.value)};
+              </script>   
+        <strong>${hour}</strong>
+            <input style="width:30px; height: 45px;" id="pontuaçao2" placeholder=""></input>
+            <br>  
+              <script>
+               pontuaçao2.value = localStorage.getItem('pontuaçao2');
+               pontuaçao2.oninput = () => {localStorage.setItem('pontuaçao2', pontuaçao2.value)};
+              </script>
+        <img src="./assets/icon-${player2}.svg" alt="ícone bandeira do ${player2}">        
      </li>
      <h3>${name}</h3>
     `
 }
+
+
 
 let delay = -0.4;
 
