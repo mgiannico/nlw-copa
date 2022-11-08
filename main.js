@@ -1,28 +1,16 @@
-  function createGame(player1, hour, player2, name) {
+
+function createGame(player1, hour, player2, name) {
     return `
      <li>
         <img src="./assets/icon-${player1}.svg" alt="ícone bandeira do ${player1}">
-            <input style="width:30px; height: 45px;" id="pontuaçao1" placeholder=""></input>
-            <br>
-              <script>
-               pontuaçao1.value = localStorage.getItem('pontuaçao1');
-               pontuaçao1.oninput = () => {
-               localStorage.setItem('pontuaçao1', pontuaçao1.value)};
-              </script>   
+            <input style="width:30px; height: 45px;" id="pont-${player1}" placeholder=""></input>
         <strong>${hour}</strong>
-            <input style="width:30px; height: 45px;" id="pontuaçao2" placeholder=""></input>
-            <br>  
-              <script>
-               pontuaçao2.value = localStorage.getItem('pontuaçao2');
-               pontuaçao2.oninput = () => {localStorage.setItem('pontuaçao2', pontuaçao2.value)};
-              </script>
+            <input style="width:30px; height: 45px;" id="pont-${player2}" placeholder=""></input>
         <img src="./assets/icon-${player2}.svg" alt="ícone bandeira do ${player2}">        
      </li>
      <h3>${name}</h3>
     `
 }
-
-
 
 let delay = -0.4;
 
@@ -64,3 +52,7 @@ document.querySelector('.cards').innerHTML = `
         ${createCard("18/12", "domingo", createGame('não-definido', '12:00', 'não-definido','indefinido'))}
 
  `       
+
+
+
+
