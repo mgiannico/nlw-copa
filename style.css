@@ -34,7 +34,7 @@ body.red {
 body.brasil {
     --card-title-border-color: #10047c;
     --card-color-primary: #047C3F;
-    --card-bg-color: #04067c34;
+    --card-bg-color: #edf03217;
     --bg: url(./assets/bg-brasil.svg)    
 }
 
@@ -86,7 +86,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
-    border: 1px solid var(--card-title-border-color);
+    border: 2px solid var(--card-title-border-color);
     border-radius: 6px;
     width: fit-content;
     margin-inline: auto;
@@ -123,6 +123,13 @@ header {
     font-size: 36px;
     line-height: 125%;
     color: #E1E1E6;
+}
+
+.card h3 {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 125%;
+    color: #c3c54e;
 }
 
 .card h2:hover,
