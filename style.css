@@ -7,8 +7,7 @@
     --card-title-border-color: #746615;
     --card-color-primary: #F7DD43; 
     --card-bg-color: #1D1C19;
-    --bg: url(./assets/bg-yellow.svg) 
-    
+    --bg: url(./assets/bg-yellow.svg)    
 }
 
 body.blue {
@@ -24,6 +23,21 @@ body.green {
     --card-bg-color: #1A1F1B;
     --bg: url(./assets/bg-green.svg)
 }
+
+body.red {
+    --card-title-border-color: #64150e;
+    --card-color-primary: #080808;
+    --card-bg-color: #d6193c1c;
+    --bg: url(./assets/bg-red.svg)
+}
+
+body.brasil {
+    --card-title-border-color: #10047c;
+    --card-color-primary: #047C3F;
+    --card-bg-color: #04067c34;
+    --bg: url(./assets/bg-brasil.svg)    
+}
+
 
 ul {
     list-style: none;
@@ -123,21 +137,6 @@ header {
     transform: transform 0.4s;
 }
 
-.card ul li input  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px #333333;
-    background: var(--card-bg-color);
-    border: 1px solid #000000;
-    margin: 5px;
-    font-style:bold;
-    font-family: “Segoe UI”,”Arial”,”Times New Roman”;
-    font-size: 30px;
-    text-align: center;
-    color: #E1E1E6;
-}
 
 .card {
     animation: appear 2s;

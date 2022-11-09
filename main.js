@@ -3,9 +3,7 @@ function createGame(player1, hour, player2, name) {
     return `
      <li>
         <img src="./assets/icon-${player1}.svg" alt="ícone bandeira do ${player1}">
-            <input style="width:30px; height: 45px;" id="pont-${player1}" placeholder=""></input>
         <strong>${hour}</strong>
-            <input style="width:30px; height: 45px;" id="pont-${player2}" placeholder=""></input>
         <img src="./assets/icon-${player2}.svg" alt="ícone bandeira do ${player2}">        
      </li>
      <h3>${name}</h3>
